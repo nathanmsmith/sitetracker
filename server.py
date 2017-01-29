@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 client = MongoClient(os.environ.get('MONGODB_URI'))
-database = client.sitetracker
+database = client.heroku_zf4q464k
 
 
 @app.route("/", methods=['GET', 'POST'])

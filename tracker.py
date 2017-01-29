@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import os
 
 client = MongoClient(os.environ.get('MONGODB_URI'))
-database = client.sitetracker
+database = client.heroku_zf4q464k
 posts = database.posts
 
 for post in posts.find():
