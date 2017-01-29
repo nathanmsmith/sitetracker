@@ -21,3 +21,4 @@ for post in posts.find():
                        msg="Go check it out!",
                        subject='Hey! ' + post['url'] + ' has been updated!'
                        )
+    post['content'] = latest
